@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Testimonio · Bunny</title>
+<meta name="description" content="Historia en video de una modelo de Bunny, sede Bogotá.">
+<link rel="icon" href="assets/img/logo-bunny.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Barlow+Condensed:wght@500;600;700&amp;family=Barlow:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="detail">
+
+<header class="site-header site-header--dark">
+  <a class="brand" href="index.html"><img src="assets/img/logo-bunny.png" alt="Bunny"></a>
+  <div class="header-actions">
+    <a class="btn btn--light btn--sm" href="testimonios.html">‹ Todos los testimonios</a>
+    <a class="btn btn--sm" href="index.html#contacto">Postúlate</a>
+  </div>
+</header>
+
+<main class="detail-main">
+  <div class="crumbs" style="margin-bottom:16px">
+    <a href="index.html">Inicio</a> · <a href="testimonios.html">Testimonios</a> · <span class="here" id="crumb-name">Testimonio</span>
+  </div>
+
+  <div class="player">
+    <div class="player__tag" id="player-tag">Video · testimonio</div>
+
+    <div class="player__poster" id="poster">
+      <button type="button" class="player__big" id="btn-big" aria-label="Reproducir">▶</button>
+      <div class="player__postertxt">
+        <b id="poster-cap"></b>
+        <small id="poster-meta"></small>
+      </div>
+    </div>
+
+    <div class="player__playing hidden" id="playing">Reproduciendo…</div>
+
+    <div class="controls">
+      <div class="progress" id="progress">
+        <div class="progress__bar" id="bar"></div>
+        <div class="progress__knob" id="knob"></div>
+      </div>
+      <div class="controls__row">
+        <button type="button" class="ctrl" id="btn-play" aria-label="Reproducir o pausar">▶</button>
+        <button type="button" class="ctrl ctrl--ghost" id="btn-mute" aria-label="Silenciar">🔊</button>
+        <div class="time"><span id="time">0:00</span> / <span id="dur">0:00</span></div>
+        <div class="controls__right" id="rates-wrap">
+          <span id="rates" style="display:flex;gap:6px">
+            <button type="button" class="pill is-on" data-rate="1">1×</button>
+            <button type="button" class="pill" data-rate="1.25">1.25×</button>
+            <button type="button" class="pill" data-rate="1.5">1.5×</button>
+          </span>
+          <button type="button" class="pill" id="btn-cc">CC</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-grid">
+    <div class="detail-body">
+      <div class="badges">
+        <span class="badge badge--solid" id="badge-sede"></span>
+        <span class="badge" id="badge-years"></span>
+        <span class="badge" id="badge-dur"></span>
+      </div>
+      <h1 id="t-title"></h1>
+      <div class="author">
+        <div class="av"></div>
+        <div>
+          <b id="t-name"></b>
+          <small id="t-role"></small>
+        </div>
+      </div>
+      <div class="rule"></div>
+      <div id="t-body"></div>
+      <div class="detail-actions">
+        <button type="button" class="action" id="btn-like"><span class="heart">♡</span> <span id="like-count">148</span></button>
+        <button type="button" class="action" id="btn-share"><span class="label">Compartir</span></button>
+      </div>
+    </div>
+
+    <div>
+      <div class="panel">
+        <div class="panel__title">Momentos del video</div>
+        <div class="chapters" id="chapters"></div>
+      </div>
+      <div class="cta-card">
+        <h3>Tu historia puede ser la siguiente</h3>
+        <p id="cta-text"></p>
+        <a class="btn btn--block" href="index.html#contacto">Quiero postularme</a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="pager">
+    <a href="#" id="nav-prev">
+      <span class="arrow">‹</span>
+      <span><small>Anterior</small><b></b></span>
+    </a>
+    <a href="#" id="nav-next">
+      <span><small>Siguiente</small><b></b></span>
+      <span class="arrow">›</span>
+    </a>
+  </nav>
+</main>
+
+<section class="more">
+  <div class="more__head">
+    <h2>Más testimonios</h2>
+    <a href="testimonios.html">Ver todos ›</a>
+  </div>
+  <div class="rule" style="margin-left:auto;margin-right:auto;max-width:1180px"></div>
+  <div class="more__grid" id="more-grid"></div>
+</section>
+
+<footer class="site-footer site-footer--dark">
+  <div class="footer-bottom">
+    <a class="brand" href="index.html"><img src="assets/img/logo-bunny.png" alt="Bunny" style="height:32px"></a>
+    <span class="up">Bogotá · Chapinero Alto</span>
+    <span>Todos los derechos reservados <span data-year>2026</span></span>
+  </div>
+</footer>
+
+<script src="js/data-testimonios.js"></script>
+<script src="js/main.js"></script>
+<script src="js/testimonio.js"></script>
+</body>
+</html>
