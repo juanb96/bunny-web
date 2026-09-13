@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modelo Only · Bunny</title>
+<meta name="description" content="Conocé cómo se trabaja como Modelo Only en Bunny, sede Bogotá, y postulate al programa.">
+<link rel="icon" href="assets/img/logo-bunny.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="detail">
+
+<header class="site-header site-header--dark">
+  <a class="brand" href="index.html"><img src="assets/img/logo-bunny.png" alt="Bunny"></a>
+  <div class="header-actions">
+    <a class="btn btn--light btn--sm" href="index.html#modalidades">‹ Ver modalidades</a>
+    <a class="btn btn--sm" href="#postulacion">Postúlate</a>
+  </div>
+</header>
+
+<main class="detail-main">
+  <div class="crumbs" style="margin-bottom:16px">
+    <a href="index.html">Inicio</a> · <a href="index.html#modalidades">Modalidades</a> · <span class="here">Modelo Only</span>
+  </div>
+
+  <div class="detail-grid">
+    <div class="about__media" style="border-radius:14px;min-height:clamp(280px,34vw,440px)">
+      <img src="assets/img/portada.png" alt="Modelo Only">
+    </div>
+    <div class="detail-body">
+      <div class="badges">
+        <span class="badge badge--solid">Modelo Only</span>
+        <span class="badge">Sede Bogotá</span>
+      </div>
+      <h1>Modelo Only</h1>
+      <div class="rule"></div>
+      <p>Como Modelo Only te enfocás en la creación de contenido para plataformas de suscripción: fotos, videos y contenido personalizado, sin transmisiones en vivo. Te acompañamos en estrategia, edición y gestión de tu cuenta para que tu tiempo rinda al máximo.</p>
+      <p>Es la modalidad ideal si preferís trabajar a tu propio ritmo, crear contenido por adelantado y contar con un equipo que se encarga de la parte comercial y de crecimiento mientras vos te concentrás en el contenido.</p>
+      <div class="detail-actions">
+        <a class="action" href="#postulacion">Quiero postularme</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<section class="section section--cream" id="postulacion">
+  <h2 class="section-title">Postúlate como Modelo Only</h2>
+  <div class="rule"></div>
+  <p class="caption">Dejanos tus datos y una asesora te contacta el mismo día por WhatsApp. Proceso confidencial, sin costo y sin compromiso.</p>
+  <div class="wrap" style="max-width:520px">
+    <div class="form-card" id="form-card">
+      <div id="form-fields">
+        <h3>Formulario de postulación · Modelo Only</h3>
+        <label class="field">
+          <span>Nombre completo</span>
+          <input type="text" id="f-nombre" placeholder="Tu nombre" autocomplete="name">
+        </label>
+        <label class="field">
+          <span>WhatsApp</span>
+          <input type="tel" id="f-tel" placeholder="300 000 0000" autocomplete="tel">
+        </label>
+        <label class="field">
+          <span>Sede</span>
+          <select id="f-sede"><option>Bogotá</option></select>
+        </label>
+        <div class="form-error hidden" id="form-error"></div>
+        <button type="button" class="btn btn--block" id="f-submit">Quiero postularme</button>
+        <div class="fineprint">Debes ser mayor de 18 años. Tus datos se tratan de forma confidencial.</div>
+      </div>
+      <div class="form-ok hidden" id="form-ok">
+        <div class="check">✓</div>
+        <h3>¡Recibido, <span id="ok-name">modelo</span>!</h3>
+        <p>Una asesora de la sede Bogotá te escribirá por WhatsApp en las próximas horas.</p>
+        <button type="button" class="btn btn--ghost" id="f-again">Enviar otro</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer site-footer--dark">
+  <div class="footer-bottom">
+    <a class="brand" href="index.html"><img src="assets/img/logo-bunny.png" alt="Bunny" style="height:32px"></a>
+    <span class="up">Bogotá · Chapinero Alto</span>
+    <span>Todos los derechos reservados <span data-year>2026</span></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
